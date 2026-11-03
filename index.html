@@ -7,8 +7,8 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{background:#FDFDFC}
 html::before,html::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:2147483647}
-html::before{opacity:.4;background-size:980px 980px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='980' height='980'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012 .02' numOctaves='4' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .53 0 0 0 0 .5 0 0 0 .14 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E")}
-html::after{opacity:.92;background-size:108px 108px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='108' height='108'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .3 0 0 0 0 .3 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E")}
+html::before{opacity:.4;background-size:980px 980px;background-image:url(fibre.png)}
+html::after{opacity:.92;background-size:108px 108px;background-image:url(grain.png)}
 body{font-family:Gelica,Arial,sans-serif;color:var(--ink2);font-size:14px}
 a{color:inherit;text-decoration:none}
 .dash-r{background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) right/1px 5px repeat-y}
@@ -86,6 +86,8 @@ h3{font-size:40px;line-height:44px;letter-spacing:-1.2px;font-weight:400;color:v
 .end .s{color:#BDBDBD;font-size:14px}
 .cols{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:150px;font-size:12px;line-height:18px;color:#BDBDBD}.cols b{display:block;font-weight:400;color:#fff;margin-bottom:12px}
 /* shortscut parts */
+.clients>div:first-child{padding-left:28px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) left/1px 5px repeat-y}.clients>div+div{padding-left:28px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) left/1px 5px repeat-y,linear-gradient(var(--dash) 0 3px,transparent 0 5px) right/1px 5px repeat-y!important}
+.bleed{height:25px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) left/1px 5px repeat-y,linear-gradient(var(--dash) 0 3px,transparent 0 5px) 50% 0/1px 5px repeat-y,linear-gradient(var(--dash) 0 3px,transparent 0 5px) right/1px 5px repeat-y;-webkit-mask:linear-gradient(transparent,#000)}
 .host{display:flex;align-items:center;gap:10px;margin-top:4px}.host img{width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:50% 25%}.host span{font-size:14px;color:var(--mute)}
 .clients{display:grid;grid-template-columns:1fr 1fr;margin-top:56px;background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) top/5px 1px repeat-x,linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}.clients>div{display:flex;flex-direction:column;gap:6px;padding:28px 0 32px}.clients>div+div{padding-left:32px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) left/1px 5px repeat-y}.clients span{font:600 11px/1 Arial,sans-serif;letter-spacing:1px;color:var(--mute);margin-bottom:10px}.clients b{font-weight:400;font-size:30px;line-height:36px;letter-spacing:-1px;color:var(--ink)}
 .big{font-size:84px;line-height:80px;letter-spacing:-4px;font-weight:400;color:var(--ink);margin:22px 0 30px}
@@ -111,7 +113,6 @@ h3{font-size:40px;line-height:44px;letter-spacing:-1.2px;font-weight:400;color:v
 .rvm img{opacity:0;filter:blur(9px);transform:scale(1.03);transition:opacity .86s var(--fj-dis),filter 1.02s var(--fj-dis),transform 1.05s var(--fj-media)}
 .rvm.in img{opacity:1;filter:none;transform:none}
 .boil-c{display:inline-block}.boil-w{display:inline-block;white-space:nowrap}
-.nav.dash-r,.logos div,.w,.help div,.q,.faq li,.feat{animation:dots 1.4s linear infinite}
 @keyframes dots{to{background-position-y:5px}}
 .heart{animation:none}@keyframes hue{to{filter:blur(1.5px) hue-rotate(360deg)}}
 .logo i{animation:sway 8.5s ease-in-out infinite}@keyframes sway{0%,100%{transform:rotate(-3deg) scale(1)}30%{transform:rotate(4deg) scale(1.08)}60%{transform:rotate(-1deg)}}
@@ -137,7 +138,7 @@ h3{font-size:40px;line-height:44px;letter-spacing:-1.2px;font-weight:400;color:v
       <p class="lead"><span>Launch films for startups.</span> Podcasts for their founders.</p></div>
       <a class="b2" href="#call" style="flex:none">Book a call</a>
     </div>
-    <div class="clients"><div><span>TECH LAUNCHES</span><b>Glasshand.com</b><b>Demoverse</b><b>findem.ai</b></div><div><span>PODCASTS</span><b>TruthWorks</b><b>Inspiring Women</b><b>Reejig</b></div></div>
+    <div class="bleed" style="margin-top:40px"></div><div class="clients" style="margin-top:0"><div><span>TECH LAUNCHES</span><b>Glasshand.com</b><b>Demoverse</b><b>findem.ai</b></div><div><span>PODCASTS</span><b>TruthWorks</b><b>Inspiring Women</b><b>Reejig</b></div></div>
     <div class="loved"><i class="heart"></i>Loved <em>- by leaders at these companies.</em></div>
     <div class="marq"><div class="tr" id="mq"><img src="logos/glean_logo.svg"><img src="logos/scale_logo.svg"><img src="logos/spotify_full-logo_black.png"><img src="logos/legora_logo.svg"><img src="logos/greylock_logo.svg"><img src="logos/public_logo.svg"><img src="logos/maven-clinic_logo.svg"><img src="logos/bayada_logo_50-years.png"><img src="logos/estee-lauder-companies_logo_black.png"><img src="logos/redfin_logo.jpg"><img src="logos/snowflake_logo_blue.svg"></div></div>
   </section>
