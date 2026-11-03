@@ -52,12 +52,12 @@ h3{font-size:40px;line-height:44px;letter-spacing:-1.2px;font-weight:400;color:v
 .play:after{content:"";position:absolute;left:11px;top:9px;border-left:8px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent}
 .thumb .cap{position:absolute;right:16px;bottom:14px;color:#fff;font-size:26px;letter-spacing:-1px;text-shadow:0 2px 14px rgba(0,0,0,.5)}
 /* help cards */
-.help{display:grid;grid-template-columns:repeat(3,1fr)}
-.help div{padding:34px 22px 40px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) right/1px 5px repeat-y,linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}
-.help div:last-child{background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}
+.help{display:grid;grid-template-columns:repeat(3,1fr);margin-top:40px;background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) top/5px 1px repeat-x}
+.help>div{display:flex;flex-direction:column;padding:40px 28px 44px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) right/1px 5px repeat-y,linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}
+.help>div:last-child{background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}
 .help .ic{display:block;width:32px;height:32px;border-radius:8px;margin-bottom:16px;object-fit:cover}
-.help h4{font-weight:400;font-size:20px;letter-spacing:-.5px;color:var(--ink)}.help p{font-size:13px;line-height:19px;color:var(--mute);margin:8px 0 18px}.help a{color:var(--acc2);font-size:14px}
-.yc{width:32px;height:32px;border-radius:8px;background:#F26522;color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;margin-bottom:16px}
+.help h4{font-weight:400;font-size:20px;letter-spacing:-.5px;color:var(--ink)}.help p{font-size:13px;line-height:19px;color:var(--mute);margin:8px 0 18px}.help a{color:var(--acc2);font-size:14px;margin-top:auto}
+.yc{width:32px;height:32px;border-radius:8px;background:var(--acc);color:#fff;display:flex;align-items:center;justify-content:center;font:700 16px/1 Arial,sans-serif;margin-bottom:16px}
 /* about */
 .about{display:grid;grid-template-columns:300px 1fr;gap:56px;margin-top:22px}
 .portrait{aspect-ratio:1;border-radius:6px;overflow:hidden;position:relative}
@@ -86,6 +86,7 @@ h3{font-size:40px;line-height:44px;letter-spacing:-1.2px;font-weight:400;color:v
 .end .s{color:#BDBDBD;font-size:14px}
 .cols{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:150px;font-size:12px;line-height:18px;color:#BDBDBD}.cols b{display:block;font-weight:400;color:#fff;margin-bottom:12px}
 /* shortscut parts */
+.host{display:flex;align-items:center;gap:10px;margin-top:4px}.host img{width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:50% 25%}.host span{font-size:14px;color:var(--mute)}
 .clients{display:grid;grid-template-columns:1fr 1fr;margin-top:56px;background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) top/5px 1px repeat-x,linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}.clients>div{display:flex;flex-direction:column;gap:6px;padding:28px 0 32px}.clients>div+div{padding-left:32px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) left/1px 5px repeat-y}.clients span{font:600 11px/1 Arial,sans-serif;letter-spacing:1px;color:var(--mute);margin-bottom:10px}.clients b{font-weight:400;font-size:30px;line-height:36px;letter-spacing:-1px;color:var(--ink)}
 .big{font-size:84px;line-height:80px;letter-spacing:-4px;font-weight:400;color:var(--ink);margin:22px 0 30px}
 .big .pic{display:inline-block;width:150px;height:66px;border-radius:10px;overflow:hidden;vertical-align:-6px;margin:0 6px}
@@ -97,7 +98,7 @@ h3{font-size:40px;line-height:44px;letter-spacing:-1.2px;font-weight:400;color:v
 .marq img{box-sizing:content-box;height:24px;padding:38px 46px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) right/1px 5px repeat-y,linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) top/5px 1px repeat-x,linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x;filter:grayscale(1) contrast(1.4);mix-blend-mode:multiply;opacity:.85}
 @keyframes marq{to{transform:translateX(-50%)}}
 .fhead{display:flex;align-items:flex-start;gap:8px}.fhead h3{font-size:72px;line-height:72px;letter-spacing:-3.5px;margin:0}.fhead sup{font-size:18px;color:var(--acc);margin-top:6px}
-.feat{display:grid;grid-template-columns:1fr 1.5fr;gap:44px;padding:56px 0;align-items:center;background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}
+.feat{display:grid;grid-template-columns:1fr 1.5fr;gap:44px;padding:40px 0;align-items:center}
 .feat .k{font-size:13px;color:var(--mute)}.feat h4{font-weight:400;font-size:54px;line-height:54px;letter-spacing:-2.4px;color:var(--ink);margin:10px 0 14px}.feat p{font-size:14px;line-height:21px;color:var(--mute);max-width:330px}
 .stats{display:flex;gap:40px;margin-top:36px}.stats b{display:block;font-weight:400;font-size:40px;letter-spacing:-1.6px;color:var(--acc)}.stats small{font-size:12px;color:var(--mute)}
 .feat .media{aspect-ratio:16/10;border-radius:12px;overflow:hidden;background:#111}.feat .media img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;transition:transform 1.2s var(--fj-media)}.feat:hover .media img{transform:scale(1.04)}
@@ -158,34 +159,26 @@ h3{font-size:40px;line-height:44px;letter-spacing:-1.2px;font-weight:400;color:v
     </div>
   </section>
 
-  <section class="sec">
-    <div class="fhead"><h3>Featured work</h3><sup>(04)</sup></div>
-    
-    <div class="feat"><div><span class="k">Launch film</span><h4>Demoverse</h4><p>Launch film for Demoverse. Founder on camera, product and data motion.</p><div class="stats"><div><b>4K</b><small>Live action and motion</small></div><div><b>60s</b><small>Launch cut</small></div></div></div><div class="media rvm"><video src="clips/dv-billion.mp4" poster="clips/dv-billion.jpg" autoplay muted loop playsinline></video></div></div>
-    <div class="feat"><div><span class="k">Podcast</span><h4>TruthWorks</h4><p>Hosted by Jessica Neal, former Chief Talent Officer at Netflix.</p><div class="stats"><div><b>4K</b><small>Every episode</small></div><div><b>Weekly</b><small>Clips and posts</small></div></div></div><div class="media rvm"><video src="clips/tr-truthworks.mp4" poster="clips/tr-truthworks.jpg" autoplay muted loop playsinline></video></div></div>
-    <div class="feat"><div><span class="k">Podcast</span><h4>Inspiring Women</h4><p>Hosted by Laurie McGraw. Town hall film shown.</p><div class="stats"><div><b>80+</b><small>Companies on our shows</small></div><div><b>CEOs</b><small>On every season</small></div></div></div><div class="media rvm"><video src="clips/iw-townhall.mp4" poster="clips/iw-townhall.jpg" autoplay muted loop playsinline></video></div></div>
-    <div class="feat"><div><span class="k">Launch film</span><h4>Glasshand</h4><p>Launch film for Glasshand.com. Apple hardware, live action and motion.</p><div class="stats"><div><b>1</b><small>Story, one hook</small></div><div><b>Day 1</b><small>Clips ready</small></div></div></div><div class="media rvm"><video src="clips/gh-devices.mp4" poster="clips/gh-devices.jpg" autoplay muted loop playsinline></video></div></div>
+  <section class="sec" id="work">
+    <span class="tag">Tech launches</span>
+    <h3>Launch films</h3>
+    <div class="feat"><div><span class="k">Launch film</span><h4>Demoverse</h4></div><div class="media rvm"><video src="clips/dv-billion.mp4" poster="clips/dv-billion.jpg" autoplay muted loop playsinline></video></div></div>
+    <div class="feat"><div><span class="k">Launch film</span><h4>Glasshand.com</h4></div><div class="media rvm"><video src="clips/gh-devices.mp4" poster="clips/gh-devices.jpg" autoplay muted loop playsinline></video></div></div>
+    <div class="work"><div class="w"><div class="wh"><div><b>Glasshand.com</b><small>Launch film</small></div><a class="vx" href="#">View on X ↗</a></div><div class="thumb"><video src="clips/gh-apple82.mp4" poster="clips/gh-apple82.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div><div class="w"><div class="wh"><div><b>Demoverse</b><small>Launch film</small></div><a class="vx" href="#">View on X ↗</a></div><div class="thumb"><video src="clips/dv-open.mp4" poster="clips/dv-open.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div></div>
   </section>
 
-  <section class="sec" id="work">
-    <span class="tag">Portfolio</span>
-    <h3>Our recent shows and launches</h3>
-    
-    <div class="work">
-      <div class="w"><div class="wh"><div><b>TruthWorks</b><small>Hosted by Jessica Neal, ex-Netflix</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><video src="clips/tr-truthworks.mp4" poster="clips/tr-truthworks.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div>
-      <div class="w"><div class="wh"><div><b>Glasshand</b><small>Launch film</small></div><a class="vx" href="#">View on X ↗</a></div><div class="thumb"><video src="clips/gh-apple82.mp4" poster="clips/gh-apple82.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div><div class="w"><div class="wh"><div><b>Demoverse</b><small>Launch film</small></div><a class="vx" href="#">View on X ↗</a></div><div class="thumb"><video src="clips/dv-open.mp4" poster="clips/dv-open.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div>
-      <div class="w"><div class="wh"><div><b>Inspiring Women</b><small>Hosted by Laurie McGraw</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><video src="clips/tr-kate.mp4" poster="clips/tr-kate.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div>
-      <div class="w"><div class="wh"><div><b>Glen Tullman</b><small>Inspiring Women guest</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><img src="purple/glen_p.jpg" alt=""><i class="play"></i></div></div>
-      <div class="w"><div class="wh"><div><b>Joanne Liu</b><small>Podcast trailer</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><video src="clips/tr-joanne.mp4" poster="clips/tr-joanne.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div>
-      <div class="w"><div class="wh"><div><b>Bryony Winn</b><small>Podcast trailer</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><video src="clips/tr-bryony.mp4" poster="clips/tr-bryony.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div>
-      <div class="w"><div class="wh"><div><b>Susannah Fox</b><small>Podcast guest</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><img src="purple/susannah_p.jpg" alt=""><i class="play"></i></div></div>
-    </div>
+  <section class="sec">
+    <span class="tag">Podcasts</span>
+    <h3>Shows we produce</h3>
+    <div class="feat"><div><span class="k">Podcast</span><h4>TruthWorks</h4><div class="host"><img src="purple/jessica_p.jpg" alt=""><span>Host · Former Netflix CHRO</span></div></div><div class="media rvm"><video src="clips/tr-truthworks.mp4" poster="clips/tr-truthworks.jpg" autoplay muted loop playsinline></video></div></div>
+    <div class="feat"><div><span class="k">Podcast</span><h4>Inspiring Women</h4><div class="host"><img src="purple/laurie_p.jpg" alt=""><span>Host · EVP, Transcarent</span></div></div><div class="media rvm"><video src="clips/iw-townhall.mp4" poster="clips/iw-townhall.jpg" autoplay muted loop playsinline></video></div></div>
+    <div class="work" style="grid-template-columns:repeat(3,1fr)"><div class="w"><div class="wh"><div><b>Inspiring Women</b><small>Trailer</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><video src="clips/tr-kate.mp4" poster="clips/tr-kate.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div><div class="w"><div class="wh"><div><b>Joanne Liu</b><small>Trailer</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><video src="clips/tr-joanne.mp4" poster="clips/tr-joanne.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div><div class="w"><div class="wh"><div><b>Bryony Winn</b><small>Trailer</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><video src="clips/tr-bryony.mp4" poster="clips/tr-bryony.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div></div>
   </section>
 
   <section class="help">
     <div><img class="ic" src="astra-logo.jpg" alt=""><h4>Speak to Naman</h4><p>A short intro call about your launch or podcast.</p><a href="#call">Book a call</a></div>
-    <div><span class="yc" style="background:var(--acc)">↗</span><h4>Launching soon?</h4><p>Share your date. We plan the film and the clips.</p><a href="#call">Book a call</a></div>
-    <div><span class="yc">Y</span><h4>In YC and need a video?</h4><p>Launch films for Y Combinator startups.</p><a href="#call">Book a call</a></div>
+    <div><span class="yc">↗</span><h4>Launching soon?</h4><p>Share your date. We plan the film and the clips.</p><a href="#call">Book a call</a></div>
+    <div><span class="yc">Y</span><h4>In YC and need a launch?</h4><p>Launch films for Y Combinator startups.</p><a href="#call">Book a call</a></div>
   </section>
 
 
