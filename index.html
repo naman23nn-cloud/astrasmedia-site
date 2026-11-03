@@ -88,6 +88,20 @@ h3{font-size:40px;line-height:44px;letter-spacing:-1.2px;font-weight:400;color:v
 .end .s{color:#BDBDBD;font-size:14px}
 .cols{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:150px;font-size:12px;line-height:18px;color:#BDBDBD}.cols b{display:block;font-weight:400;color:#FAF7EB;margin-bottom:12px}
 /* shortscut parts */
+.bigsec{overflow:hidden}
+.huge{font-weight:400;font-size:132px;line-height:120px;letter-spacing:-6.5px;color:var(--ink);text-align:center;margin:0}.huge.acc{color:var(--acc)}
+.hsub{text-align:center;color:var(--mute);font-size:15px;line-height:22px;max-width:420px;margin:18px auto 44px}
+.strip{overflow:hidden;margin:0 -48px;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.st{display:flex;gap:18px;width:max-content;animation:marq 60s linear infinite}.st.rev{animation-direction:reverse}
+.ft{width:300px;flex:none;background:rgba(0,0,0,.045);border-radius:10px;padding:10px}.fn{font-size:12px;color:var(--ink);margin:2px 4px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ft video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px}
+.strip:hover .st{animation-play-state:paused}
+.hq{display:grid;grid-template-columns:1fr 1.3fr;gap:40px;align-items:end;background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) top/5px 1px repeat-x}
+.pill2{display:inline-block;font:600 10px/1 Arial,sans-serif;letter-spacing:.8px;border:1.5px solid var(--ink);border-radius:20px;padding:4px 8px;color:var(--ink)}
+.city{font-size:30px;letter-spacing:-1px;color:var(--ink);margin-top:18px}.now{font-size:14px;color:var(--mute);margin-top:6px;font-variant-numeric:tabular-nums}
+.big2{font-size:64px;line-height:62px;letter-spacing:-3px;color:var(--ink);margin-bottom:22px}
+@media(max-width:900px){.huge{font-size:64px;line-height:62px;letter-spacing:-3px}.hq{grid-template-columns:1fr}.big2{font-size:40px;line-height:40px}.strip{margin:0 -16px}.ft{width:220px}}
+
 .clients>div:first-child{padding-left:28px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) left/1px 5px repeat-y}.clients>div+div{padding-left:28px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) left/1px 5px repeat-y,linear-gradient(var(--dash) 0 3px,transparent 0 5px) right/1px 5px repeat-y!important}
 .bleed{height:25px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) left/1px 5px repeat-y,linear-gradient(var(--dash) 0 3px,transparent 0 5px) 50% 0/1px 5px repeat-y,linear-gradient(var(--dash) 0 3px,transparent 0 5px) right/1px 5px repeat-y;-webkit-mask:linear-gradient(transparent,#000)}
 .host{display:flex;align-items:center;gap:10px;margin-top:4px}.host img{width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:50% 25%}.host span{font-size:14px;color:var(--mute)}
@@ -185,12 +199,27 @@ h3{font-size:40px;line-height:44px;letter-spacing:-1.2px;font-weight:400;color:v
   </section>
 
 
+
+  <section class="sec bigsec">
+    <h2 class="huge acc">Launch videos</h2>
+    <p class="hsub">A launch day is your best shot at customers, talent and the story people tell about you.</p>
+    <div class="strip"><div class="st"><div class="ft"><div class="fn">Glasshand - Device farm.mp4</div><video src="clips/gh-devices.mp4" poster="clips/gh-devices.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Glasshand - Apple hardware.mp4</div><video src="clips/gh-apple50.mp4" poster="clips/gh-apple50.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Demoverse - One billion views.mp4</div><video src="clips/dv-billion.mp4" poster="clips/dv-billion.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Glasshand - iCloud login.mp4</div><video src="clips/gh-icloud.mp4" poster="clips/gh-icloud.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Demoverse - Founder open.mp4</div><video src="clips/dv-open.mp4" poster="clips/dv-open.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Glasshand - Riley hook.mp4</div><video src="clips/gh-hook.mp4" poster="clips/gh-hook.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Glasshand - Device farm.mp4</div><video src="clips/gh-devices.mp4" poster="clips/gh-devices.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Glasshand - Apple hardware.mp4</div><video src="clips/gh-apple50.mp4" poster="clips/gh-apple50.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Demoverse - One billion views.mp4</div><video src="clips/dv-billion.mp4" poster="clips/dv-billion.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Glasshand - iCloud login.mp4</div><video src="clips/gh-icloud.mp4" poster="clips/gh-icloud.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Demoverse - Founder open.mp4</div><video src="clips/dv-open.mp4" poster="clips/dv-open.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Glasshand - Riley hook.mp4</div><video src="clips/gh-hook.mp4" poster="clips/gh-hook.jpg" autoplay muted loop playsinline></video></div></div></div>
+    <h2 class="huge" style="margin-top:110px">Podcasts</h2>
+    <p class="hsub">Shows that put founders and CEOs in front of the people they want to reach.</p>
+    <div class="strip"><div class="st rev"><div class="ft"><div class="fn">TruthWorks - Trailer.mp4</div><video src="clips/tr-truthworks.mp4" poster="clips/tr-truthworks.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Inspiring Women - Town hall.mp4</div><video src="clips/iw-townhall.mp4" poster="clips/iw-townhall.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Inspiring Women - Trailer.mp4</div><video src="clips/tr-kate.mp4" poster="clips/tr-kate.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Joanne Liu - Trailer.mp4</div><video src="clips/tr-joanne.mp4" poster="clips/tr-joanne.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Bryony Winn - Trailer.mp4</div><video src="clips/tr-bryony.mp4" poster="clips/tr-bryony.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">TruthWorks - Trailer.mp4</div><video src="clips/tr-truthworks.mp4" poster="clips/tr-truthworks.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Inspiring Women - Town hall.mp4</div><video src="clips/iw-townhall.mp4" poster="clips/iw-townhall.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Inspiring Women - Trailer.mp4</div><video src="clips/tr-kate.mp4" poster="clips/tr-kate.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Joanne Liu - Trailer.mp4</div><video src="clips/tr-joanne.mp4" poster="clips/tr-joanne.jpg" autoplay muted loop playsinline></video></div><div class="ft"><div class="fn">Bryony Winn - Trailer.mp4</div><video src="clips/tr-bryony.mp4" poster="clips/tr-bryony.jpg" autoplay muted loop playsinline></video></div></div></div>
+  </section>
+
+  <section class="sec hq">
+    <div><span class="pill2">HEADQUARTERS</span><div class="city">Toronto, Canada</div><div class="now" id="now">&nbsp;</div></div>
+    <div class="hqr"><div class="big2">Create content<br>people want to watch</div><a class="b2" href="#call">Start a project</a></div>
+  </section>
+
   <section class="sec">
     <div class="row"><div><span class="tag">Reviews</span><h3>The Wall Of Love.</h3><p class="lead" style="font-size:14px;color:var(--mute)">Straight from our inbox.</p></div><a class="b2" href="#call">Book a call</a></div>
     <div class="q"><div><span class="ctx">Podcast video</span><blockquote>"Everybody is talking about the video. <span>You killed it!</span>"</blockquote></div><div class="who"><img src="purple/glen_p.jpg" alt=""><div><b>Glen Tullman</b><small>CEO, Transcarent</small></div></div></div>
     <div class="q"><div><span class="ctx">Inspiring Women podcast</span><blockquote>"Looks great, thank you. <span>I have forwarded to the team</span> 😎"</blockquote></div><div class="who"><img src="purple/laurie_p.jpg" alt=""><div><b>Laurie McGraw</b><small>EVP, Transcarent</small></div></div></div>
     <div class="q"><div><span class="ctx">Podcast episode</span><blockquote>"Took a listen and all sounds great. <span>Big thanks team!</span>"</blockquote></div><div class="who"><img src="purple/jennie_p.jpg" alt=""><div><b>Jennie Rogerson</b><small>Chief People Officer, Canva</small></div></div></div>
-    <div class="q"><div><span class="ctx">Launch film</span><blockquote>"That looks great! <span>Looking forward to getting this kicked off!</span>"</blockquote></div><div class="who"><img src="trevor-real.jpg" alt=""><div><b>Trevor Keith</b><small>Founder, Glasshand.com</small></div></div></div>
+    <div class="q"><div><span class="ctx">Glasshand.com launch film</span><blockquote>"That looks great! <span>Looking forward to getting this kicked off!</span>"</blockquote></div><div class="who"><img src="trevor-real.jpg" alt=""><div><b>Trevor Keith</b><small>Founder, Glasshand.com</small></div></div></div>
     <div class="q"><div><span class="ctx">Podcast episode</span><blockquote>"<span>I am thrilled with the conversation</span> captured on this episode!"</blockquote></div><div class="who"><img src="purple/susannah_p.jpg" alt=""><div><b>Susannah Fox</b><small>Former U.S. CTO, HHS</small></div></div></div>
     <div class="q"><div><span class="ctx">Podcast episode</span><blockquote>"<span>Thank you so much</span> for the opportunity! 😊"</blockquote></div><div class="who"><img src="purple/bryony_p.jpg" alt=""><div><b>Bryony Winn</b><small>CEO, BAYADA</small></div></div></div>
   </section>
@@ -227,5 +256,6 @@ document.querySelectorAll('.boil').forEach(h=>{const w=document.createTreeWalker
 const cs=[...document.querySelectorAll('.boil-c')],r=a=>(Math.random()*2-1)*a;
 setInterval(()=>cs.forEach(c=>c.style.transform=`translate(${r(.35)}px,${r(.35)}px) rotate(${r(.5)}deg)`),120);
 const clk=document.getElementById('clk');const tick=()=>clk.textContent='Toronto, Canada · '+new Date().toLocaleTimeString('en-US',{timeZone:'America/Toronto',hour:'2-digit',minute:'2-digit'});tick();setInterval(tick,30000);
+const nw=document.getElementById('now');const tk2=()=>nw.textContent=new Date().toLocaleString('en-US',{timeZone:'America/Toronto',hour:'2-digit',minute:'2-digit',weekday:'long',month:'short',day:'numeric'})+' (Toronto)';tk2();setInterval(tk2,30000);
 </script>
 </body></html>
