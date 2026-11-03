@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Astra | Podcasts and Launch Videos for Founders</title>
+<style>
+@font-face{font-family:Gelica;src:url(Gelica-Regular.otf)}
+:root{--ink:#160216;--ink2:#1D1D1D;--mute:#6B6B6B;--acc:#9B5CFF;--acc2:#7C5CFF;--quote:#5B8FD6;--dash:#E7E7E7}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:#FDFDFC}
+html::before,html::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:2147483647}
+html::before{opacity:.4;background-size:980px 980px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='980' height='980'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012 .02' numOctaves='4' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .53 0 0 0 0 .5 0 0 0 .14 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E")}
+html::after{opacity:.92;background-size:108px 108px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='108' height='108'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .3 0 0 0 0 .3 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E")}
+body{font-family:Gelica,Arial,sans-serif;color:var(--ink2);font-size:14px}
+a{color:inherit;text-decoration:none}
+.dash-r{background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) right/1px 5px repeat-y}
+.dash-b{background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}
+.wrap{display:grid;grid-template-columns:357px minmax(0,1fr)}main{min-width:0}
+/* sidebar */
+.nav{position:sticky;top:0;height:100vh;padding:20px;display:flex;flex-direction:column;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:6px;font-size:22px;letter-spacing:-.6px;color:var(--ink)}
+.logo i{width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#E2CCFF,var(--acc) 60%,#5B2FD6)}
+.nav h2{font-size:28px;line-height:30px;letter-spacing:-.8px;font-weight:400;color:var(--ink);margin:18px 0 12px}
+.nav p{font-size:13px;line-height:18.85px;color:var(--mute)}
+.btns{display:flex;gap:6px;margin-top:16px;flex-wrap:wrap}
+.b1,.b2{display:inline-block;padding:10px 16px;border-radius:60px;font-size:14px;border:1px solid rgba(255,255,255,.1)}
+.b1{background:var(--acc);color:#fff;box-shadow:0 1px 0 1px rgba(241,241,241,.34),0 12px 12px rgba(0,0,0,.1),inset 0 0 20px 1px rgba(255,255,255,.2)}
+.b2{background:linear-gradient(#252525,#1F1F1F 50%,#252525);color:#fff;box-shadow:0 12px 12px rgba(0,0,0,.1),0 24px 24px rgba(0,0,0,.1),0 4px 20px rgba(255,255,255,.1),inset 0 0 20px 1px rgba(255,255,255,.2)}
+.foot{font-size:11px;line-height:15px;color:var(--ink)}.foot a{text-decoration:underline;margin-right:14px}.foot p{font-size:11px;line-height:15px;color:var(--ink);margin:12px 0 18px}
+/* main */
+main{padding:0 48px}
+.sec{padding:96px 0}
+.tag{display:inline-block;background:var(--acc);color:#1A0B2E;padding:6px 11px;border-radius:30px;font-size:13px;box-shadow:inset 0 0 10px 2px rgba(255,255,255,.4)}
+h1{font-size:60px;line-height:60px;letter-spacing:-3px;font-weight:400;color:var(--ink);margin:18px 0 32px;max-width:620px}
+h3{font-size:40px;line-height:44px;letter-spacing:-1.2px;font-weight:400;color:var(--ink2);margin:20px 0 22px;max-width:640px}
+.lead{font-size:17px;line-height:26px;color:#3a3a3a;max-width:560px}.lead span{color:#8D7AA8}
+.row{display:flex;justify-content:space-between;align-items:flex-end;gap:30px}
+.loved{display:flex;align-items:center;justify-content:center;gap:10px;font-size:18px;color:var(--ink2);margin:88px 0 30px}.loved em{font-style:normal;color:var(--mute)}
+.heart{width:26px;height:24px;background:var(--acc);filter:blur(1.5px);clip-path:path('M13 23 1 11A6.5 6.5 0 0 1 13 3a6.5 6.5 0 0 1 12 8Z')}
+.logos{display:grid;grid-template-columns:repeat(4,1fr);position:relative}
+.logos div{height:110px;display:flex;align-items:center;justify-content:center;padding:28px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) right/1px 5px repeat-y,linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}
+.logos img{max-width:130px;max-height:28px;filter:grayscale(1) contrast(1.4);mix-blend-mode:multiply}
+.more{display:flex;justify-content:center;margin-top:-18px;position:relative}
+/* work */
+.work{display:grid;grid-template-columns:1fr 1fr;margin-top:48px}
+.w{padding:28px 11px 14px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) right/1px 5px repeat-y,linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}
+.w:nth-child(2n){background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}
+.wh{display:flex;justify-content:space-between;align-items:center;padding:0 8px 18px}
+.wh b{display:block;font-weight:400;font-size:22px;letter-spacing:-.6px;color:var(--ink)}.wh small{font-size:12px;color:#444}
+.vx{background:rgba(0,0,0,.05);border-radius:30px;padding:8px 13px;font-size:14px;color:var(--ink)}
+.thumb{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#EEE}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:50% 25%}
+.play{position:absolute;left:14px;bottom:14px;width:28px;height:28px;border-radius:50%;background:rgba(30,30,30,.55);backdrop-filter:blur(6px)}
+.play:after{content:"";position:absolute;left:11px;top:9px;border-left:8px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent}
+.thumb .cap{position:absolute;right:16px;bottom:14px;color:#fff;font-size:26px;letter-spacing:-1px;text-shadow:0 2px 14px rgba(0,0,0,.5)}
+/* help cards */
+.help{display:grid;grid-template-columns:repeat(3,1fr)}
+.help div{padding:34px 22px 40px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) right/1px 5px repeat-y,linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}
+.help div:last-child{background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}
+.help .ic{width:26px;height:26px;border-radius:50%;margin-bottom:14px;filter:blur(1px)}
+.help h4{font-weight:400;font-size:20px;letter-spacing:-.5px;color:var(--ink)}.help p{font-size:13px;line-height:19px;color:var(--mute);margin:8px 0 18px}.help a{color:#3B82F6;font-size:14px}
+.yc{width:26px;height:26px;border-radius:50%;background:#F26522;color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;margin-bottom:14px}
+/* about */
+.about{display:grid;grid-template-columns:300px 1fr;gap:56px;margin-top:22px}
+.portrait{aspect-ratio:1;border-radius:6px;overflow:hidden;position:relative}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.about .nm{font-size:17px;color:var(--ink);margin-top:22px}.about .rl{font-size:13px;color:var(--mute);margin-top:2px}
+.about h3{margin-top:0}.about h3 span{color:var(--mute)}
+.about p{font-size:13px;line-height:21px;color:var(--mute);margin-bottom:18px;max-width:520px}.about p b{font-weight:400;color:var(--ink)}
+.tl{max-width:520px;margin-top:10px}.tl div{display:grid;grid-template-columns:130px 1fr;padding:16px 0;background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) top/5px 1px repeat-x}
+.tl small{font-size:11px;color:var(--mute)}.tl b{font-weight:400;font-size:14px;color:var(--ink);display:block}.tl span{font-size:12px;color:var(--mute)}
+/* wall */
+.q{display:grid;grid-template-columns:1fr 220px;gap:60px;padding:70px 0;background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x;align-items:start}
+.q .ctx{display:inline-block;background:rgba(0,0,0,.05);border-radius:30px;padding:6px 12px;font-size:12px;color:var(--ink);margin-bottom:18px}
+.q blockquote{font-size:24px;line-height:33px;letter-spacing:-.6px;color:var(--ink2)}.q blockquote span{color:var(--quote)}
+.who{display:flex;gap:12px;align-items:center;margin-top:44px}.who img{width:50px;height:50px;border-radius:50%;object-fit:cover}.who b{display:block;font-weight:400;font-size:14px;color:var(--ink)}.who small{font-size:12px;color:var(--mute)}
+/* faq */
+.faq{display:grid;grid-template-columns:300px 1fr;margin-top:10px}
+.faq h3 span{color:#8A8A8A;display:block;margin-top:34px}
+.faq ul{list-style:none;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) left/1px 5px repeat-y}
+.faq li{padding:26px 24px;font-size:17px;letter-spacing:-.3px;color:var(--ink);background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}
+/* end card */
+.end{position:relative;background:#0A0A0A;border-radius:14px;overflow:hidden;color:#fff;padding:120px 34px 40px;margin:0 -28px 20px}
+.end .bgw{position:absolute;inset:-20px;font-size:118px;line-height:104px;letter-spacing:-4px;color:#1B1B1B;word-break:break-all;pointer-events:none}
+.end .c{position:relative;text-align:center}
+.end h3{color:#fff;font-size:56px;line-height:58px;letter-spacing:-2.4px;margin:22px auto 14px;max-width:560px}
+.end .flower{width:44px;height:44px;margin:0 auto;border-radius:50%;background:radial-gradient(circle,#fff 18%,#E9DDFF 36%,var(--acc) 62%,transparent 70%);filter:blur(1.5px)}
+.end .s{color:#BDBDBD;font-size:14px}
+.cols{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:150px;font-size:12px;line-height:18px;color:#BDBDBD}.cols b{display:block;font-weight:400;color:#fff;margin-bottom:12px}
+/* shortscut parts */
+.clients{display:flex;flex-wrap:wrap;gap:10px 26px;align-items:baseline;margin-top:40px;font-size:22px;letter-spacing:-.6px;color:var(--ink)}.clients b{font-weight:400}.clients span{font:600 10px Arial,sans-serif;letter-spacing:.8px;border:1.5px solid var(--ink);border-radius:20px;padding:4px 8px}
+.big{font-size:84px;line-height:80px;letter-spacing:-4px;font-weight:400;color:var(--ink);margin:22px 0 30px}
+.big .pic{display:inline-block;width:150px;height:66px;border-radius:10px;overflow:hidden;vertical-align:-6px;margin:0 6px}
+.big .pic img,.big .pic video,.feat .media video,.thumb video{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.chips{display:inline-flex;flex-direction:column;gap:4px;vertical-align:14px;margin-left:8px}
+.chips span{font:600 10px/1 Arial,sans-serif;letter-spacing:.6px;border:1.5px solid var(--ink);border-radius:20px;padding:4px 8px;color:var(--ink)}
+.marq{overflow:hidden;margin-top:0;-webkit-mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.marq .tr{display:flex;gap:0;width:max-content;animation:marq 38s linear infinite;align-items:center}
+.marq img{box-sizing:content-box;height:24px;padding:38px 46px;background:linear-gradient(var(--dash) 0 3px,transparent 0 5px) right/1px 5px repeat-y,linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) top/5px 1px repeat-x,linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x;filter:grayscale(1) contrast(1.4);mix-blend-mode:multiply;opacity:.85}
+@keyframes marq{to{transform:translateX(-50%)}}
+.fhead{display:flex;align-items:flex-start;gap:8px}.fhead h3{font-size:72px;line-height:72px;letter-spacing:-3.5px;margin:0}.fhead sup{font-size:18px;color:var(--acc);margin-top:6px}
+.feat{display:grid;grid-template-columns:1fr 1.5fr;gap:44px;padding:56px 0;align-items:center;background:linear-gradient(90deg,var(--dash) 0 3px,transparent 0 5px) bottom/5px 1px repeat-x}
+.feat .k{font-size:13px;color:var(--mute)}.feat h4{font-weight:400;font-size:54px;line-height:54px;letter-spacing:-2.4px;color:var(--ink);margin:10px 0 14px}.feat p{font-size:14px;line-height:21px;color:var(--mute);max-width:330px}
+.stats{display:flex;gap:40px;margin-top:36px}.stats b{display:block;font-weight:400;font-size:40px;letter-spacing:-1.6px;color:var(--acc)}.stats small{font-size:12px;color:var(--mute)}
+.feat .media{aspect-ratio:16/10;border-radius:12px;overflow:hidden;background:#111}.feat .media img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;transition:transform 1.2s var(--fj-media)}.feat:hover .media img{transform:scale(1.04)}
+.word{display:flex;align-items:center;gap:22px;margin-top:80px;font-size:150px;line-height:1;letter-spacing:-8px;color:#fff}.word i{width:120px;height:120px;border-radius:18px;background:var(--acc);display:flex;align-items:center;justify-content:center;font-style:normal;font-size:80px;letter-spacing:0}
+.clock{font-size:12px;color:#BDBDBD;margin-top:6px}
+/* flowjam motion */
+:root{--fj-text:cubic-bezier(.22,.86,.3,1);--fj-media:cubic-bezier(.16,1,.3,1);--fj-dis:cubic-bezier(.37,0,.63,1)}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .62s var(--fj-text) var(--d,0ms),transform .62s var(--fj-text) var(--d,0ms)}
+.rv.in{opacity:1;transform:none}
+.rvm img{opacity:0;filter:blur(9px);transform:scale(1.03);transition:opacity .86s var(--fj-dis),filter 1.02s var(--fj-dis),transform 1.05s var(--fj-media)}
+.rvm.in img{opacity:1;filter:none;transform:none}
+.boil-c{display:inline-block}.boil-w{display:inline-block;white-space:nowrap}
+.nav.dash-r,.logos div,.w,.help div,.q,.faq li,.feat{animation:dots 1.4s linear infinite}
+@keyframes dots{to{background-position-y:5px}}
+.heart{animation:hue 6s linear infinite}@keyframes hue{to{filter:blur(1.5px) hue-rotate(360deg)}}
+.logo i{animation:sway 8.5s ease-in-out infinite}@keyframes sway{0%,100%{transform:rotate(-3deg) scale(1)}30%{transform:rotate(4deg) scale(1.08)}60%{transform:rotate(-1deg)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.rv,.rvm img{opacity:1;transform:none;filter:none}}
+@media(max-width:900px){.big{font-size:46px;line-height:46px;letter-spacing:-2px}.feat{grid-template-columns:1fr}.word{font-size:70px}.word i{width:60px;height:60px;font-size:40px}}
+@media(max-width:900px){.wrap{grid-template-columns:1fr}.nav{position:static;height:auto}main{padding:0 16px}h1{font-size:44px;line-height:46px}.logos,.help{grid-template-columns:1fr 1fr}.work,.about,.q,.faq,.cols{grid-template-columns:1fr}.end{margin:0 0 16px}}
+</style></head><body>
+<div class="wrap">
+<aside class="nav dash-r">
+  <div>
+    <a class="logo" href="#"><img src="astra-mark.png" alt="" style="width:26px;height:26px">Astra</a>
+    <h2>Viral launch videos for founders</h2>
+    <p>Launch films and podcasts, filmed in 4K.</p>
+    <div class="btns"><a class="b1" href="#work">Our work</a><a class="b2" href="#call">Book a call</a></div>
+  </div>
+  <div class="foot">© 2026 Astra Media</div>
+</aside>
+<main>
+  <section class="sec" style="padding-top:62px">
+    <span class="tag">Loved by Silicon Valley startups</span>
+    <div class="row">
+      <div><h1 class="big boil">We make <span class="chips"><span>LAUNCH FILMS</span><span>PODCASTS</span></span><br>viral <span class="pic"><video src="clips/gh-apple50.mp4" poster="clips/gh-apple50.jpg" autoplay muted loop playsinline></video></span> launch<br>videos.</h1>
+      <p class="lead"><span>Launch films for startups.</span> Podcasts for their founders.</p></div>
+      <a class="b2" href="#call" style="flex:none">Book a call</a>
+    </div>
+        <p class="clients"><span>CLIENTS AND COLLABORATIONS</span><b>Glasshand.com</b><b>Demoverse</b><b>findem.ai</b><b>Transcarent</b><b>TruthWorks</b><b>Inspiring Women</b><b>Reejig</b></p>
+    <div class="loved"><i class="heart"></i>Loved <em>- by leaders at these companies.</em></div>
+    <div class="marq"><div class="tr" id="mq"><img src="logos/glean_logo.svg"><img src="logos/scale_logo.svg"><img src="logos/spotify_full-logo_black.png"><img src="logos/legora_logo.svg"><img src="logos/greylock_logo.svg"><img src="logos/public_logo.svg"><img src="logos/maven-clinic_logo.svg"><img src="logos/bayada_logo_50-years.png"><img src="logos/estee-lauder-companies_logo_black.png"><img src="logos/redfin_logo.jpg"><img src="logos/snowflake_logo_blue.svg"></div></div>
+  </section>
+
+  <section class="sec">
+    <div class="fhead"><h3>Featured work</h3><sup>(04)</sup></div>
+    
+    <div class="feat"><div><span class="k">Launch film</span><h4>Demoverse</h4><p>Launch film for Demoverse. Founder on camera, product and data motion.</p><div class="stats"><div><b>4K</b><small>Live action and motion</small></div><div><b>60s</b><small>Launch cut</small></div></div></div><div class="media rvm"><video src="clips/dv-billion.mp4" poster="clips/dv-billion.jpg" autoplay muted loop playsinline></video></div></div>
+    <div class="feat"><div><span class="k">Podcast</span><h4>TruthWorks</h4><p>Hosted by Jessica Neal, former Chief Talent Officer at Netflix.</p><div class="stats"><div><b>4K</b><small>Every episode</small></div><div><b>Weekly</b><small>Clips and posts</small></div></div></div><div class="media rvm"><video src="clips/tr-truthworks.mp4" poster="clips/tr-truthworks.jpg" autoplay muted loop playsinline></video></div></div>
+    <div class="feat"><div><span class="k">Podcast</span><h4>Inspiring Women</h4><p>Hosted by Laurie McGraw, EVP at Transcarent. Town hall film shown.</p><div class="stats"><div><b>80+</b><small>Companies on our shows</small></div><div><b>CEOs</b><small>On every season</small></div></div></div><div class="media rvm"><video src="clips/iw-townhall.mp4" poster="clips/iw-townhall.jpg" autoplay muted loop playsinline></video></div></div>
+    <div class="feat"><div><span class="k">Launch film</span><h4>Glasshand</h4><p>Launch film for Glasshand.com. Apple hardware, live action and motion.</p><div class="stats"><div><b>1</b><small>Story, one hook</small></div><div><b>Day 1</b><small>Clips ready</small></div></div></div><div class="media rvm"><video src="clips/gh-devices.mp4" poster="clips/gh-devices.jpg" autoplay muted loop playsinline></video></div></div>
+  </section>
+
+  <section class="sec" id="work">
+    <span class="tag">Portfolio</span>
+    <h3>Our recent shows and launches</h3>
+    
+    <div class="work">
+      <div class="w"><div class="wh"><div><b>TruthWorks</b><small>Hosted by Jessica Neal, ex-Netflix</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><video src="clips/tr-truthworks.mp4" poster="clips/tr-truthworks.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div>
+      <div class="w"><div class="wh"><div><b>Glasshand</b><small>Launch film</small></div><a class="vx" href="#">View on X ↗</a></div><div class="thumb"><video src="clips/gh-apple82.mp4" poster="clips/gh-apple82.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div><div class="w"><div class="wh"><div><b>Demoverse</b><small>Launch film</small></div><a class="vx" href="#">View on X ↗</a></div><div class="thumb"><video src="clips/dv-open.mp4" poster="clips/dv-open.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div>
+      <div class="w"><div class="wh"><div><b>Inspiring Women</b><small>Hosted by Laurie McGraw, Transcarent</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><video src="clips/tr-kate.mp4" poster="clips/tr-kate.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div>
+      <div class="w"><div class="wh"><div><b>Transcarent</b><small>Glen Tullman, CEO</small></div><a class="vx" href="#">View on LinkedIn ↗</a></div><div class="thumb"><img src="purple/glen_p.jpg" alt=""><i class="play"></i></div></div>
+      <div class="w"><div class="wh"><div><b>Joanne Liu</b><small>Podcast trailer</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><video src="clips/tr-joanne.mp4" poster="clips/tr-joanne.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div>
+      <div class="w"><div class="wh"><div><b>BAYADA</b><small>Bryony Winn trailer</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><video src="clips/tr-bryony.mp4" poster="clips/tr-bryony.jpg" autoplay muted loop playsinline></video><i class="play"></i></div></div>
+      <div class="w"><div class="wh"><div><b>U.S. HHS</b><small>Susannah Fox, former CTO</small></div><a class="vx" href="#">Watch ↗</a></div><div class="thumb"><img src="purple/susannah_p.jpg" alt=""><i class="play"></i></div></div>
+    </div>
+  </section>
+
+  <section class="help">
+    <div><i class="ic" style="background:radial-gradient(circle,#F3E8FF,#C4A1FF 60%,transparent 70%)"></i><h4>Speak to Naman</h4><p>Book an intro with Naman. Learn about Astra and how we can help you.</p><a href="#call">Book a call</a></div>
+    <div><i class="ic" style="background:radial-gradient(circle,#E8E4FF,#8E7CFF 60%,transparent 70%)"></i><h4>Launching soon?</h4><p>Tell us your launch date and we plan the film, the clips and the posts around it.</p><a href="#call">Book a call</a></div>
+    <div><span class="yc">Y</span><h4>In YC and need a video?</h4><p>We work with Y Combinator startups on launch videos and founder podcasts.</p><a href="#call">Talk to us</a></div>
+  </section>
+
+  <section class="sec">
+    <span class="tag">About Astra</span>
+    <div class="about">
+      <div><div class="portrait"><img src="purple/jessica_p.jpg" alt=""></div><div class="nm">Jessica Neal</div><div class="rl">Host of TruthWorks, produced by Astra</div></div>
+      <div>
+        <h3>We're Astra, <span>a team making shows and films for founders.</span></h3>
+        <p>We produce podcasts for leaders at <b>Transcarent, Canva and BAYADA</b>, and launch films for <b>Glasshand.com</b> and <b>Demoverse</b>.</p>
+        <p>We book the guests, run the recording, grade every frame in 4K and cut the clips. <b>You just show up and talk.</b></p>
+        <div class="tl">
+          <div><small>Podcast</small><span><b>TruthWorks</b>Hosted by Jessica Neal, former Chief Talent Officer at Netflix.</span></div>
+          <div><small>Podcast</small><span><b>Inspiring Women</b>Hosted by Laurie McGraw, EVP at Transcarent.</span></div>
+          <div><small>Launch film</small><span><b>Glasshand.com</b>Launch film for Trevor Keith.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="row"><div><span class="tag">Reviews</span><h3>The Wall Of Love.</h3><p class="lead" style="font-size:14px;color:var(--mute)">Straight from our inbox.</p></div><a class="b2" href="#call">Book a call</a></div>
+    <div class="q"><div><span class="ctx">Video for Transcarent</span><blockquote>"Everybody is talking about the video. <span>You killed it!</span>"</blockquote></div><div class="who"><img src="purple/glen_p.jpg" alt=""><div><b>Glen Tullman</b><small>CEO, Transcarent</small></div></div></div>
+    <div class="q"><div><span class="ctx">Inspiring Women podcast</span><blockquote>"Looks great, thank you. <span>I have forwarded to the team</span> 😎"</blockquote></div><div class="who"><img src="purple/laurie_p.jpg" alt=""><div><b>Laurie McGraw</b><small>EVP, Transcarent</small></div></div></div>
+    <div class="q"><div><span class="ctx">Podcast episode</span><blockquote>"Took a listen and all sounds great. <span>Big thanks team!</span>"</blockquote></div><div class="who"><img src="purple/jennie_p.jpg" alt=""><div><b>Jennie Rogerson</b><small>Chief People Officer, Canva</small></div></div></div>
+    <div class="q"><div><span class="ctx">Launch film</span><blockquote>"That looks great! <span>Looking forward to getting this kicked off!</span>"</blockquote></div><div class="who"><img src="clips/gh-hook.jpg" style="object-position:40% 30%" alt=""><div><b>Trevor Keith</b><small>Founder, Solid</small></div></div></div>
+    <div class="q"><div><span class="ctx">Podcast episode</span><blockquote>"<span>I am thrilled with the conversation</span> captured on this episode!"</blockquote></div><div class="who"><img src="purple/susannah_p.jpg" alt=""><div><b>Susannah Fox</b><small>Former U.S. CTO, HHS</small></div></div></div>
+    <div class="q"><div><span class="ctx">Podcast episode</span><blockquote>"<span>Thank you so much</span> for the opportunity! 😊"</blockquote></div><div class="who"><img src="purple/bryony_p.jpg" alt=""><div><b>Bryony Winn</b><small>CEO, BAYADA</small></div></div></div>
+  </section>
+
+  <section class="sec faq" id="faq">
+    <h3>Got<br>Questions?<span>We've Got Answers.</span></h3>
+    <ul>
+      <li>What does Astra do?</li>
+      <li>Do you book the guests for my podcast?</li>
+      <li>Can you record remotely or in a studio?</li>
+      <li>How long does a launch video take?</li>
+      <li>Do you work with Y Combinator startups?</li>
+      <li>What do I get each week?</li>
+      <li>Who writes the script for my launch?</li>
+    </ul>
+  </section>
+
+  <section class="end" id="call">
+    <div class="bgw">podcasts and launches podcasts and launches podcasts and launches podcasts and launches podcasts and launches podcasts and launches</div>
+    <div class="c"><div class="flower"></div><h3>Podcasts and launch videos for founders.</h3><p class="s">Leaders from 80+ companies and counting.</p><div class="btns" style="justify-content:center;margin-top:26px"><a class="b1" href="mailto:hello@astrasmedia.com">Book a call</a></div></div>
+    <div class="cols"><div><b>Navigation</b>- Work<br>- Reviews<br>- FAQ</div><div><b>About</b>A podcast and launch video studio for founders, CEOs and startups.</div><div><b>Shows</b>TruthWorks<br>Inspiring Women</div><div><b>Contact</b>Naman<br>hello@astrasmedia.com<div class="clock" id="clk">Toronto, Canada</div></div></div>
+    <div class="word" style="position:relative"><i>↗</i>astra</div>
+  </section>
+</main>
+</div>
+<script>
+const mq=document.getElementById('mq');mq.innerHTML+=mq.innerHTML;
+document.querySelectorAll('main .sec > *:not(.feat):not(.work):not(.logos), .feat > div:first-child, .w, .help > div, .q, .faq li, .tl > div').forEach((e,i)=>{e.classList.add('rv');e.style.setProperty('--d',(i%4)*80+'ms')});
+document.querySelectorAll('.thumb,.portrait').forEach(e=>e.classList.add('rvm'));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv,.rvm').forEach(e=>io.observe(e));
+// boil: letters jitter slightly, like hand-drawn line boil
+document.querySelectorAll('.boil').forEach(h=>{const w=document.createTreeWalker(h,4);const ns=[];while(w.nextNode())ns.push(w.currentNode);ns.forEach(n=>{if(n.parentElement.closest('.chips'))return;const f=document.createDocumentFragment();n.textContent.split(/(\s+)/).forEach(wd=>{if(!wd)return;if(/^\s+$/.test(wd)){f.append(' ');return}const w=document.createElement('span');w.className='boil-w';[...wd].forEach(ch=>{const s=document.createElement('span');s.className='boil-c';s.textContent=ch;w.append(s)});f.append(w)});n.replaceWith(f)})});
+const cs=[...document.querySelectorAll('.boil-c')],r=a=>(Math.random()*2-1)*a;
+setInterval(()=>cs.forEach(c=>c.style.transform=`translate(${r(.35)}px,${r(.35)}px) rotate(${r(.5)}deg)`),120);
+const clk=document.getElementById('clk');const tick=()=>clk.textContent='Toronto, Canada · '+new Date().toLocaleTimeString('en-US',{timeZone:'America/Toronto',hour:'2-digit',minute:'2-digit'});tick();setInterval(tick,30000);
+</script>
+</body></html>
